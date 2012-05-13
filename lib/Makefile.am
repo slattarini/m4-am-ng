@@ -1,6 +1,6 @@
 ## Makefile.am - template for generating Makefile via Automake
 ##
-## Copyright (C) 2009-2011 Free Software Foundation, Inc.
+## Copyright (C) 2009-2012 Free Software Foundation, Inc.
 ##
 ## This file is part of GNU M4.
 ##
@@ -22,7 +22,6 @@ CLEANFILES =
 EXTRA_DIST =
 MOSTLYCLEANDIRS =
 MOSTLYCLEANFILES =
-SUFFIXES =
 
 noinst_LIBRARIES = libm4.a
 

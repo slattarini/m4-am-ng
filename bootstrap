@@ -295,6 +295,16 @@ func_echo "running: $CONFIG_SHELL gnulib/gnulib-tool --update"
 $CONFIG_SHELL gnulib/gnulib-tool --update \
   || func_fatal_error "gnulib-tool failed"
 
+## ---------------------------------- ##
+## Crude hack to support Automake-NG. ##
+## ---------------------------------- ##
+
+perl -ni -e '
+  /^SUFFIXES[ \t]*[+]?=/ and next;
+  s/^\.sin\.sed:[ \t]*$/%.sed: %.sin/;
+  print;
+' tests/gnulib.mk lib/gnulib.mk
+
 ## ----------- ##
 ## Autoreconf. ##
 ## ----------- ##

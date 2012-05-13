@@ -1,5 +1,5 @@
 # Configure template for GNU M4.           -*-Autoconf-*-
-# Copyright (C) 1991, 1993-1994, 2004-2011 Free Software Foundation,
+# Copyright (C) 1991, 1993-1994, 2004-2012 Free Software Foundation,
 # Inc.
 #
 # This file is part of GNU M4.
@@ -17,13 +17,12 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-AC_PREREQ([2.62])
+AC_PREREQ([2.65])
 AC_INIT([GNU M4], m4_esyscmd([build-aux/git-version-gen .tarball-version]),
   [bug-m4@gnu.org])
 AC_CONFIG_AUX_DIR([build-aux])
 
-AM_INIT_AUTOMAKE([1.11.1 dist-bzip2 dist-xz color-tests parallel-tests
-silent-rules gnu])
+AM_INIT_AUTOMAKE([1.12a ng dist-bzip2 dist-xz color-tests parallel-tests])
 
 m4_pattern_forbid([^M4_[A-Z]])
 
