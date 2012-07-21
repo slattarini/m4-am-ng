@@ -6,6 +6,7 @@
 *.tar.gz
 .tarball-version
 .version
+.am/
 aclocal.m4
 autom4te.cache
 /build-aux/missing
