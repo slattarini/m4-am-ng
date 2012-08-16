@@ -21,6 +21,8 @@
 
 SUBDIRS = . examples lib src doc checks tests
 
+AM_DIST_FORMATS = gzip bzip2 xz
+
 syntax_check_exceptions =		\
   .x-sc_prohibit_tab_based_indentation	\
   .x-update-copyright
